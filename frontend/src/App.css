@@ -1,6 +1,140 @@
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover{
+  text-decoration: none;
+  color: inherit;
+}
+
 .app{
   display: flex;
   flex-flow: column;
   justify-content: space-between;
-  min-height: 100vh;
+  height: 100%;
+}
+
+.postImg{
+  width: 92vw;
+  max-height: 92vw;
+  object-fit: cover;
+}
+.addPostContainer{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.homePost{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.chatScreen{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.show{
+  background-color: red;
+}
+
+.chatList{
+  padding: 0.5em 0;
+  overflow: scroll;
+  width: 25%;
+}
+
+.chatScreenMain{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  margin: 0.8em 0 1.1em 0;
+}
+.msgInput{
+  background-color: #c9c9c9;
+  border-radius: 20px;
+  border: none;
+  padding: 0.8em;
+  width: 95%;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .postImg{
+    object-fit: contain;
+  }
+  .chatList{
+    width: 100%;
+  }
+
+  .dis-none{
+    display: none;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .postCard{
+    width: 300px;
+    height: 440px;
+  }
+
+  .postImg{
+    width: 380px;
+    height: 380px;
+  }
+
+  .homePost{
+    width: 98vw;
+  }
+
+  .chatScreen{
+    width: 75%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .postCard{
+    width: 400px;
+    height: 540px;
+  }
+  .postImg{
+    width: 380px;
+    height: 380px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .postImg{
+    width: 400px;
+    height: 500px;
+  }
+  .postImg{
+    width: 380px;
+    height: 380px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .postCard{
+    width: 340px;
+    height: 485px;
+  }
+  .postImg{
+    width: 325px;
+    height: 325px;
+  }
 }
